@@ -20,14 +20,15 @@ function createWindow() {
       x: 20,
       y: 32
     },
+
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
       devTools: isDevelopment,
       spellcheck: false,
-      preload: path.join(__dirname, 'preload.js')
-    },
-    show: false
+      preload: path.join(__dirname, 'preload.js'),
+      worldSafeExecuteJavaScript: false
+    }
   }
 
   contextMenu({

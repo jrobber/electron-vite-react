@@ -1,9 +1,16 @@
-import { Project } from 'ts-morph'
+import { SyntaxKind, Project, SourceFile } from 'ts-morph'
 // const basePath = `../../../ivi/ivi_react_native`
 const project = new Project({
   tsConfigFilePath: `tsconfig.json`
 })
-// electron_1.contextBridge.exposeInMainWorld('myAPI', {
-//     project: 'project'
-// });
-console.log('PRELOAD', project.getSourceFiles())
+
+const files = project.getSourceFiles()
+const file = files[10]
+file.getFilePath()
+
+window.myAPI = {
+  project,
+  SyntaxKind
+}
+
+// console.log('PRELOAD', project.getSourceFiles())

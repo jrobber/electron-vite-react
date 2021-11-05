@@ -24,7 +24,7 @@ export default defineConfig({
   base: './',
   root: resolve('./src/renderer'),
   build: {
-    outDir: resolve('./dist/src/main'),
+    outDir: resolve('./dist'),
     emptyOutDir: true
     // commonjsOptions: {
 

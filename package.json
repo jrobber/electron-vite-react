@@ -30,6 +30,7 @@
     "react-dom": "^17.0.0",
     "tailwindcss": "^2.0.3",
     "ts-morph": "^12.2.0",
+    "ttypescript": "^1.5.12",
     "vite-plugin-commonjs-externals": "^0.1.1"
   },
   "devDependencies": {
@@ -64,7 +65,7 @@
   ],
   "build": {
     "directories": {
-      "output": "dist/src/main",
+      "output": "dist",
       "buildResources": "public"
     },
     "appId": "dev.twstyled.app",
@@ -129,18 +130,18 @@
         ]
       },
       {
-        "from": "./dist/src/renderer",
+        "from": "./dist",
         "to": "./",
         "filter": [
           "index.html"
         ]
       },
       {
-        "from": "./dist/src/main",
+        "from": "./dist/main",
         "to": "./main"
       },
       {
-        "from": "./dist/src/assets",
+        "from": "./dist/assets",
         "to": "./assets"
       }
     ]
