@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -22,6 +23,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
+      "@/main/*": ["src/main/*"],
       "@/renderer/*": ["src/renderer/*"],
       "@/common/*": ["src/common/*"]
     }
@@ -30,5 +32,5 @@
     "**/*.ts",
     "**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

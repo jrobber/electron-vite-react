@@ -11,8 +11,8 @@ export type WatchMain = (
 
 export const srcPath = path.join(process.cwd(), './src')
 export const mainPath = path.join(process.cwd(), './src/main')
-export const outDir = path.join(process.cwd(), './dist')
-export const outDirMain = path.join(process.cwd(), './dist/main')
+export const outDir = path.join(process.cwd(), './dist/src/main')
+export const outDirMain = path.join(process.cwd(), './dist/src/main')
 export const entryPath = path.join(mainPath, 'index.ts')
 
 export const consoleMessagePrefix = '[script]'

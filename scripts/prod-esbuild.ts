@@ -30,18 +30,18 @@ export default async (
   }
 
   try {
-    await esbuild.build({
-      outdir: outDirMain,
-      entryPoints: [entryPath],
-      tsconfig: tsconfigPath,
-      format: 'cjs',
-      logLevel: 'info',
-      errorLimit: 0,
-      incremental: true,
-      platform: 'node',
-      sourcemap: false,
-      watch: false
-    })
+    // await esbuild.build({
+    //   outdir: outDirMain,
+    //   entryPoints: [entryPath],
+    //   tsconfig: tsconfigPath,
+    //   format: 'cjs',
+    //   logLevel: 'info',
+    //   errorLimit: 0,
+    //   incremental: true,
+    //   platform: 'node',
+    //   sourcemap: false,
+    //   watch: false
+    // })
     buildComplete(outDirMain)
   } catch (e) {
     if (!!e.errors && !!e.errors.length && e.errors.length > 0) {

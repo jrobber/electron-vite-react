@@ -81,26 +81,26 @@ async function esDev(
   }
 
   try {
-    await esbuild.build({
-      outdir: outDir,
-      entryPoints: [entryPath],
-      tsconfig: tsconfigPath,
-      format: 'cjs',
-      logLevel: 'silent',
-      errorLimit: 0,
-      incremental: true,
-      platform: 'node',
-      sourcemap: true,
-      watch: {
-        onRebuild: (error) => {
-          if (error) {
-            reportError(transformErrors(error))
-          } else {
-            buildComplete(outDir)
-          }
-        }
-      }
-    })
+    // await esbuild.build({
+    //   outdir: outDir,
+    //   entryPoints: [entryPath],
+    //   tsconfig: tsconfigPath,
+    //   format: 'cjs',
+    //   logLevel: 'silent',
+    //   errorLimit: 0,
+    //   incremental: true,
+    //   platform: 'node',
+    //   sourcemap: true,
+    //   watch: {
+    //     onRebuild: (error) => {
+    //       if (error) {
+    //         reportError(transformErrors(error))
+    //       } else {
+    //         buildComplete(outDir)
+    //       }
+    //     }
+    //   }
+    // })
     buildComplete(outDir)
   } catch (e) {
     if (!!e.errors && !!e.errors.length && e.errors.length > 0) {

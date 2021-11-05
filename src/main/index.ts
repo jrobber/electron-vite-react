@@ -1,3 +1,4 @@
+import path from 'path'
 import { app, BrowserWindow } from 'electron'
 import type { BrowserWindowConstructorOptions } from 'electron'
 import contextMenu from 'electron-context-menu'
@@ -20,10 +21,11 @@ function createWindow() {
       y: 32
     },
     webPreferences: {
-      contextIsolation: true,
+      contextIsolation: false,
+      nodeIntegration: true,
       devTools: isDevelopment,
       spellcheck: false,
-      nodeIntegration: true
+      preload: path.join(__dirname, 'preload.js')
     },
     show: false
   }

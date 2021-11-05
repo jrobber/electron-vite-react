@@ -52,5 +52,28 @@
     "javascript": "javascriptreact",
     "typescript": "javascript",
     "typescriptreact": "javascriptreact"
-  }
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#d0cae4",
+    "activityBar.activeBorder": "#b47c6b",
+    "activityBar.background": "#d0cae4",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#b47c6b",
+    "activityBarBadge.foreground": "#15202b",
+    "editorGroup.border": "#d0cae4",
+    "panel.border": "#d0cae4",
+    "sash.hoverBorder": "#d0cae4",
+    "sideBar.border": "#d0cae4",
+    "statusBar.background": "#b2a9d2",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#9488c0",
+    "statusBarItem.remoteBackground": "#b2a9d2",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#b2a9d2",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#b2a9d299",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#b2a9d2"
 }
